@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Угадай число</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Угадай число от 1 до 5</h1>
+    <p>Ставка: 0.001 ETH</p>
+    <p>Банк: <span id="pot">0</span> ETH</p>
+
+    <div>
+      <input type="number" id="guessInput" min="1" max="5" placeholder="Введи число">
+      <button id="playBtn">Играть</button>
+    </div>
+
+    <div id="result"></div>
+
+    <button id="connectBtn">Подключить MetaMask</button>
+    <div>
+      <input type="text" id="fundAmount" placeholder="Сумма для пополнения">
+      <button id="fundBtn">Пополнить банк</button>
+    </div>
+    <div>
+      <input type="text" id="withdrawAmount" placeholder="Сумма для вывода">
+      <button id="withdrawBtn">Вывести</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.11.0/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
